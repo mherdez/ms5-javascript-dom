@@ -85,9 +85,9 @@ const listaDeUsuarios =  [
     }
   ];
 
-function createPage() {
+function createPage( titulo ) {
   const h1 = document.createElement('h1');
-  h1.textContent = 'Usuarios';
+  h1.textContent = titulo;
   document.body.appendChild(h1);
 
   // <div class="container">
@@ -122,5 +122,6 @@ function newCard( usuario ) {
 
 }
 
-createPage();
+document.title = 'Usuarios Random v2.0'
+createPage('Usuarios Contratados');
 listaDeUsuarios.map( usuario => newCard(usuario) );
