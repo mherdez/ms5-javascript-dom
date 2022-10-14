@@ -9,6 +9,8 @@ body {
   font-family: 'SST', sans-serif;
   margin: 20px 0;
   text-align: center;
+  display: flex;
+  gap: 5px;
 }
 .card {
   background-color: white;
