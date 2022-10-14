@@ -112,5 +112,8 @@ function newCard( usuario ) {
 }
 
 createPage();
-newCard( usuario1 );
-newCard( usuario2 );
+newCard( listaDeUsuarios[0] );
+newCard( listaDeUsuarios[1] );
+newCard( listaDeUsuarios[2] );
+newCard( listaDeUsuarios[3] );
+newCard( listaDeUsuarios[4] );
