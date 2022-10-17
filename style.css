@@ -1,43 +1,23 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 body {
-  background-color: rgb(25, 25, 50);
+  background-color: rgb(104, 99, 99);
   color: white;
-  font-family: 'SST', sans-serif;
-  margin: 20px 0;
+  font-family: sans-serif;
+}
+.contenedor {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.card {
+  background-color: rgb(181, 181, 181);
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 50px auto;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.64);
   text-align: center;
 }
-.container {
-  height: 100vh;
-  margin: 0 auto;
-  padding: 0;
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.card {
-  background-color: white;
-  padding: 25px;
-  color: indigo;
-  width: 200px;
-  margin: 15px auto;
-  border-radius: 15px;
-}
 img {
-  width: 130px;
-  height: 130px;
   border-radius: 50%;
-}
-h2 {
-  margin-top: 15px;
-  font-size: 16px;
-}
-p {
-  margin: 5px 0 15px;
-  font-size: 10px;
 }
