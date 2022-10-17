@@ -7,12 +7,25 @@ function Card( imagen, titulo, texto ) {
     <h2>${titulo}</h2>
     <p>${texto}</p>
   </div>`;
-  contenedor.innerHTML = cardBody;
+  contenedor.innerHTML += cardBody;
 }
 
-const imagen = 'https://picsum.photos/200/200';
-const titulo = 'Karem Diaz';
-const texto  = 'karem_diaz@hotmail.com';
+Card(
+'https://picsum.photos/id/80/200',
+'Karem Diaz',
+'karem_diaz@hotmail.com'
+);
 
-Card( imagen, titulo, texto);
+Card(
+  'https://picsum.photos/id/90/200',
+  'Sebastian Pedroza',
+  'sebastian_pedroza@hotmail.com'
+);
+
+Card(
+  'https://picsum.photos/id/100/200',
+  'Maria Elena',
+  'maria_elena@hotmail.com'
+);
+
 

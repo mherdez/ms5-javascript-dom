@@ -6,6 +6,7 @@ body {
 .contenedor {
   display: flex;
   justify-content: center;
+  gap: 20px;
   width: 80%;
   margin: 0 auto;
 }
@@ -20,4 +21,5 @@ body {
 }
 img {
   border-radius: 50%;
+  width: 100%;
 }
