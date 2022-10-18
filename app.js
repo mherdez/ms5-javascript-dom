@@ -4,7 +4,7 @@ const contenedor = document.querySelector('#container-cards');
 
 function Card( id, nombre, email, avatar ) {
   const cardBody = `<div class="card">
-    <img src=${avatar} alt="${nombre}">
+    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id}.svg" alt="${nombre}">
     <h2>${nombre}</h2>
     <p>${email}</p>
   </div>`;
@@ -57,19 +57,8 @@ const usuarios = [
     }
 ];
 
-usuarios.map( usuario => Card(usuario.id, usuario.first_name + " " + usuario.last_name, usuario.email, usuario.avatar) )
+// usuarios.map( usuario => Card(usuario.id, usuario.first_name + " " + usuario.last_name, usuario.email, usuario.avatar) )
 
-
-/* TIPOS DE CICLOS PARA RECORRER UN ARREGLO
-
-  - for
-  - for in
-  - for of
-  - forEach
-  - map
-*/
-
-
-// TODO: Crear Elementos HTML y
-//       utilizar ejemplo con usuarios
-
+for(let i=1; i <= 640; i++) {
+  Card(i, 'Pokemon' + i, '')
+}
